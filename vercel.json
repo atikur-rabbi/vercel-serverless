@@ -17,11 +17,6 @@
             "use": "@now/go"
         }
     ],
-    "functions": {
-        "api/index.php": {
-          "runtime": "vercel-php@0.1.0"
-        }
-      },
     "routes": [
         {
             "src": "/",
