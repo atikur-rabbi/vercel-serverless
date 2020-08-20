@@ -35,10 +35,7 @@
             "src": "/js",
             "dest": "api/app_js.js"
         },
-        {
-            "src": "/php",
-            "dest": "api/app_php.php"
-        },
+
         {
             "src": "/go",
             "dest": "api/app_go.go"
