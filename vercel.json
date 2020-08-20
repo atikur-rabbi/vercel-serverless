@@ -1,0 +1,38 @@
+{
+    "builds": [
+        {
+            "src": "**/*.html",
+            "use": "@now/static"
+        },
+        {
+            "src": "**/*.py",
+            "use": "@now/python"
+        },
+        {
+            "src": "**/*.js",
+            "use": "@now/node"
+        },
+        {
+            "src": "**/*.go",
+            "use": "@now/go"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/",
+            "dest": "public/index.html"
+        },
+        {
+            "src": "/python",
+            "dest": "api/app_python.py"
+        },
+        {
+            "src": "/js",
+            "dest": "api/app_js.js"
+        },
+        {
+            "src": "/go",
+            "dest": "api/app_go.go"
+        }
+    ]
+}
