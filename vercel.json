@@ -13,6 +13,10 @@
             "use": "@now/node"
         },
         {
+            "src": "**/*.php",
+            "use": "@now/php"
+        },
+        {
             "src": "**/*.go",
             "use": "@now/go"
         }
@@ -29,6 +33,10 @@
         {
             "src": "/js",
             "dest": "api/app_js.js"
+        },
+        {
+            "src": "/php",
+            "dest": "api/app_php.php"
         },
         {
             "src": "/go",
