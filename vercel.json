@@ -18,10 +18,6 @@
             "use": "@now/node"
         },
         {
-            "src": "**/*.php",
-            "use": "@now/php"
-        },
-        {
             "src": "**/*.go",
             "use": "@now/go"
         }
