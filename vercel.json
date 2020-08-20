@@ -1,9 +1,4 @@
 {
-    "functions": {
-        "api/app_php.php": {
-          "runtime": "vercel-php@0.1.0"
-        }
-      },
     "builds": [
         {
             "src": "**/*.html",
