@@ -22,6 +22,10 @@
             "dest": "api/app_go.go"
         },
         {
+            "src": "/rb",
+            "dest": "api/app_rb.rb"
+        },
+        {
             "src": "/php",
             "dest": "api/app_php.php"
         },
