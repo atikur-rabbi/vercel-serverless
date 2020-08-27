@@ -1,28 +1,17 @@
 {
     "functions": {
-        "**/*.html": {
-            "runtime": "@now/static"
-        },
-        "**/*.py": {
-            "runtime": "@now/python"
+        "api/*.php": {
+            "runtime": "vercel-php@0.3.1"
         }
     },
     "routes": [
         {
-            "src": "/",
-            "dest": "public/index.html"
+            "src": "/(.*)",
+            "dest": "/api/$1"
         },
         {
-            "src": "/python",
-            "dest": "api/app_python.py"
-        },
-        {
-            "src": "/js",
-            "dest": "api/app_js.js"
-        },
-        {
-            "src": "/go",
-            "dest": "api/app_go.go"
+            "src": "/favicon.ico",
+            "dest": "https://juicy.vercel.app/favicon.ico"
         }
     ]
 }
