@@ -1,22 +1,12 @@
 {
-    "builds": [
-        {
-            "src": "**/*.html",
-            "use": "@now/static"
+    "functions": {
+        "**/*.html": {
+            "runtime": "@now/static"
         },
-        {
-            "src": "**/*.py",
-            "use": "@now/python"
-        },
-        {
-            "src": "**/*.js",
-            "use": "@now/node"
-        },
-        {
-            "src": "**/*.go",
-            "use": "@now/go"
+        "**/*.py": {
+            "runtime": "@now/python"
         }
-    ],
+    },
     "routes": [
         {
             "src": "/",
@@ -30,7 +20,6 @@
             "src": "/js",
             "dest": "api/app_js.js"
         },
-
         {
             "src": "/go",
             "dest": "api/app_go.go"
