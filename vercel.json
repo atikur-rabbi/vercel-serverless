@@ -6,8 +6,8 @@
     },
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/api/$1"
+            "src": "/php",
+            "dest": "api/app_php.php"
         },
         {
             "src": "/favicon.ico",
