@@ -1,7 +1,7 @@
 {
     "functions": {
         "api/*.php": { "runtime": "vercel-php@0.3.1" },
-        "api/*.sh": { "runtime": "vercel-bash@3.0.7" }
+        "api/bash/*.sh": { "runtime": "vercel-bash@3.0.7" }
     },
     "routes": [
         {
