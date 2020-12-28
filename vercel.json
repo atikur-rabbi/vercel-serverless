@@ -1,8 +1,7 @@
 {
     "functions": {
-        "api/*.php": {
-            "runtime": "vercel-php@0.3.1"
-        }
+        "api/*.php": { "runtime": "vercel-php@0.3.1" },
+        "api/*.sh": { "runtime": "vercel-bash@3.0.7" }
     },
     "routes": [
         {
@@ -28,6 +27,10 @@
         {
             "src": "/php",
             "dest": "api/app_php.php"
+        },
+        {
+            "src": "/bash",
+            "dest": "api/bash/build.sh"
         },
         {
             "src": "/favicon.ico",
